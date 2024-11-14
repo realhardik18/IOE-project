@@ -6,8 +6,8 @@ const int echoPin = 3;
 long duration;
 int distance;
 Servo myServo;
-unsigned long previousMillis = 0;  // Tracks time for blinking
-const long blinkInterval = 100;    // Interval for LED blink (100 ms)
+unsigned long previousMillis = 0;  
+const long blinkInterval = 100;    
 
 void setup() {
   pinMode(trigPin, OUTPUT);
@@ -23,7 +23,6 @@ void loop() {
     delay(50);  // Adjust delay for desired servo speed
     distance = calculateDistance();
 
-    // Blink the LED if distance is less than 10 cm
 
     // Print the angle and distance for each step
     Serial.print(angle);
